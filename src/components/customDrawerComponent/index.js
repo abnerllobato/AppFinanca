@@ -16,7 +16,7 @@ const CustomMenuDrawer = props => {
 
 
         return (
-            <View style={{ flex: 1, }}>
+            <View style={{ flex: 1,}}>
                 <DrawerContentScrollView {...props}  >
                     <View style={styles.headerDrawer}  >
                         <Image

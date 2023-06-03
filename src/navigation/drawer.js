@@ -1,5 +1,5 @@
 import react from "react";
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { InitialPage } from "../pages/initialPage";
 import { TransactionPage } from '../pages/transactionPage';
@@ -27,16 +27,16 @@ export const MenuDrawer = () => {
                 screenOptions={{
                     headerShown: false,
                     drawerActiveBackgroundColor: '#F2F4F8',
-                    drawerLabelStyle:{
+                    drawerLabelStyle: {
                         marginLeft: - 10,
                         fontFamily: 'Montserrat_400Regular',
                         fontSize: 18,
                         color: '#2B47FC',
                     }
                 }} >
-                <Drawer.Screen name="Resumo" component={InitialPage} options={{ drawerIcon: () => (<Foundation name="dollar" size={30} color='#2B47FC' />),}} />
+                <Drawer.Screen name="Resumo" component={InitialPage} options={{ drawerIcon: () => (<Foundation name="dollar" size={30} color='#2B47FC' />), }} />
                 <Drawer.Screen name='Transações' component={TransactionPage} options={{ drawerIcon: () => (<Octicons name="arrow-switch" size={21} color='#2B47FC' />), }} />
-                <Drawer.Screen name="Cartões" component={CardsPage} options={{ drawerIcon: () => (<Fontisto name="credit-card" size={16} color='#2B47FC' />),}} />
+                <Drawer.Screen name="Cartões" component={CardsPage} options={{ drawerIcon: () => (<Fontisto name="credit-card" size={16} color='#2B47FC' />), }} />
             </Drawer.Navigator>
         )
 
