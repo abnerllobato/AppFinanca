@@ -32,14 +32,14 @@ export const InitialPage = ({navigation}) => {
         </LinearGradient>
         <View style={{ width: '100%', alignItems: 'center' }} >
           <View style={styles.ResumoSaldo} >
-            <Text style={{ color: '#3A3A3A', fontFamily: 'Montserrat_400Regular', fontSize: 16, }} >Seu Saldo</Text>
+            <Text style={{ color: '#3A3A3A', fontFamily: 'Montserrat_400Regular', fontSize: 16, }} >Seu saldo total</Text>
             <Text style={{ color: '#2D99FF', fontFamily: 'Montserrat_700Bold', fontSize: 30, }} >R$ 8.500,00</Text>
           </View>
           <View style={styles.VerifyCount}>
             <LinearGradient colors={['rgba(73, 96, 249, 1)', 'rgba(25, 55, 254, 1)']}
               style={styles.Account}
             >
-              <Text style={{ color: 'white', fontFamily: 'Montserrat_400Regular', fontSize: 19, }} > Verifique Suas Contas Bancarias</Text>
+              <Text style={{ color: 'white', fontFamily: 'Montserrat_400Regular', fontSize: 19, }} >Verifique Suas Contas Bancárias</Text>
               <AntDesign name="arrowright" size={20} color="white" />
             </LinearGradient>
           </View>
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     width: '80%',
     height: '50%',
-    top: -60,
+    top: -40,
     borderRadius: 30,
     padding: 20,
 
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   VerifyCount: {
     width: '80%',
-    height: '20%',
+    height: '23%',
     shadowColor: 'black',
     shadowOpacity: 0.4,
     shadowRadius: 8,
@@ -103,9 +103,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 20,
-    paddingLeft: 20,
-    justifyContent: 'center',
+    paddingHorizontal: 20,
+    justifyContent: 'space-between',
     alignItems: 'center',
+    flexDirection: 'row'
   },
 });
 

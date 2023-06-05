@@ -7,7 +7,7 @@ import { MenuDrawer } from "./src/navigation/drawer";
 export default function App() {
   return (
     <NavigationContainer>
-      <MenuDrawer />
+      <MenuDrawer/>
     </NavigationContainer>
   )
 }
